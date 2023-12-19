@@ -1,3 +1,4 @@
+opciones = ["1. Agregar compra","2. Mostrar compras","3. Mostrar total gastado","4. Salir"]
 def agregar_compra(monto,compras):
     compras.append(monto)
     print("La compra se ha agregado correctamente.")
@@ -17,6 +18,8 @@ def mostrar_total(total_gastado):
 def main():
     compras = []
     total_gastado = 0
+    for opcion in opciones:
+        print (opcion)
     while True:
         opcion = int(input("Ingrese una opcion del menu"))
         if opcion == 1:
